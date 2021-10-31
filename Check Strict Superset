@@ -1,0 +1,10 @@
+A = set(map(int, input().split()))
+n = int(input())
+output=True
+for i in range(n):
+    a = set(map(int, input().split()))
+    if not A.issuperset(a):
+        output=False
+    elif (len(a)>=len(A)):
+        output=False
+print(output)
